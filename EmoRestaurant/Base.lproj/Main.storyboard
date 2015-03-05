@@ -22,8 +22,8 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTN-lr-e3V">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmr-9g-ImI">
-                                <rect key="frame" x="16" y="554" width="80" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmr-9g-ImI">
+                                <rect key="frame" x="16" y="505" width="80" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="ofB-87-HzI"/>
                                     <constraint firstAttribute="width" constant="74" id="yXk-UC-Qf4"/>
@@ -56,13 +56,13 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to EmoRestaurant" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgO-fB-i25">
-                                <rect key="frame" x="16" y="109" width="568" height="22"/>
+                                <rect key="frame" x="16" y="109" width="568" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRG-Iw-USo">
-                                <rect key="frame" x="504" y="554" width="80" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRG-Iw-USo">
+                                <rect key="frame" x="504" y="505" width="80" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="9rA-c5-q0w"/>
                                     <constraint firstAttribute="height" constant="36" id="MKy-wW-MN9"/>

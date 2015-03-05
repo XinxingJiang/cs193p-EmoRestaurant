@@ -10,14 +10,14 @@
 	<string>EmoRestaurant</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6D1AB63B1C7E3DF65037CB2860C693F30224025F</key>
+		<key>BCC6DCBFC2EF2438BB6A327EB8AEBBE0B87501F8</key>
 		<string>https://github.com/cs193p-final-project/EmoRestaurant.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>EmoRestaurant.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6D1AB63B1C7E3DF65037CB2860C693F30224025F</key>
+		<key>BCC6DCBFC2EF2438BB6A327EB8AEBBE0B87501F8</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6D1AB63B1C7E3DF65037CB2860C693F30224025F</string>
+	<string>BCC6DCBFC2EF2438BB6A327EB8AEBBE0B87501F8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6D1AB63B1C7E3DF65037CB2860C693F30224025F</string>
+			<string>BCC6DCBFC2EF2438BB6A327EB8AEBBE0B87501F8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>EmoRestaurant</string>
 		</dict>
