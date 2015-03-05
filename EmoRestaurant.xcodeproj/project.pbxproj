@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9028307A1AA6FAD2004F2B0C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830721AA6FAD2004F2B0C /* ImageViewController.swift */; };
+		9028307B1AA6FAD2004F2B0C /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830731AA6FAD2004F2B0C /* SearchResultTableViewController.swift */; };
+		9028307C1AA6FAD2004F2B0C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830741AA6FAD2004F2B0C /* LoginViewController.swift */; };
+		9028307D1AA6FAD2004F2B0C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830751AA6FAD2004F2B0C /* RegistrationViewController.swift */; };
+		9028307E1AA6FAD2004F2B0C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830761AA6FAD2004F2B0C /* SearchViewController.swift */; };
+		9028307F1AA6FAD2004F2B0C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830771AA6FAD2004F2B0C /* HistoryViewController.swift */; };
+		902830801AA6FAD2004F2B0C /* DisplayResturantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830781AA6FAD2004F2B0C /* DisplayResturantViewController.swift */; };
+		902830811AA6FAD2004F2B0C /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830791AA6FAD2004F2B0C /* ScrollView.swift */; };
+		90ABA1101AA8273F00B4D711 /* ShaoShanChong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90ABA10F1AA8273F00B4D711 /* ShaoShanChong.jpg */; };
+		90ABA1121AA828AE00B4D711 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ABA1111AA828AE00B4D711 /* DemoURL.swift */; };
+		B73479DD1AA83C1D000E9638 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73479DC1AA83C1D000E9638 /* WelcomeViewController.swift */; };
+		B73479DF1AA83C24000E9638 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73479DE1AA83C24000E9638 /* AccountViewController.swift */; };
+		B7C007E71AA6D1D900A96DFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C007E61AA6D1D900A96DFB /* AppDelegate.swift */; };
+		B7C007EC1AA6D1D900A96DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C007EA1AA6D1D900A96DFB /* Main.storyboard */; };
+		B7C007EE1AA6D1D900A96DFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7C007ED1AA6D1D900A96DFB /* Images.xcassets */; };
+		B7C007F11AA6D1D900A96DFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C007EF1AA6D1D900A96DFB /* LaunchScreen.xib */; };
+		B7C007FD1AA6D1D900A96DFB /* EmoRestaurantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C007FC1AA6D1D900A96DFB /* EmoRestaurantTests.swift */; };
+		B7C008071AA6D1EE00A96DFB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C008061AA6D1EE00A96DFB /* AudioToolbox.framework */; };
+		B7C008091AA6D1F400A96DFB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C008081AA6D1F400A96DFB /* CFNetwork.framework */; };
+		B7C0080B1AA6D1FA00A96DFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C0080A1AA6D1FA00A96DFB /* CoreGraphics.framework */; };
+		B7C0080D1AA6D20000A96DFB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C0080C1AA6D20000A96DFB /* CoreLocation.framework */; };
+		B7C0080F1AA6D20500A96DFB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C0080E1AA6D20500A96DFB /* MobileCoreServices.framework */; };
+		B7C008111AA6D20A00A96DFB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C008101AA6D20A00A96DFB /* QuartzCore.framework */; };
+		B7C008131AA6D20F00A96DFB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C008121AA6D20F00A96DFB /* Security.framework */; };
+		B7C008151AA6D21400A96DFB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C008141AA6D21400A96DFB /* StoreKit.framework */; };
+		B7C008171AA6D21C00A96DFB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C008161AA6D21C00A96DFB /* SystemConfiguration.framework */; };
+		B7C008191AA6D22300A96DFB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C008181AA6D22300A96DFB /* libz.dylib */; };
+		B7C0081B1AA6D22A00A96DFB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C0081A1AA6D22A00A96DFB /* libsqlite3.dylib */; };
+		B7C008201AA6D27900A96DFB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C0081F1AA6D27900A96DFB /* Parse.framework */; };
+		B7C008311AA6D85000A96DFB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C008301AA6D85000A96DFB /* Bolts.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7C007F71AA6D1D900A96DFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7C007D91AA6D1D900A96DFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7C007E01AA6D1D900A96DFB;
+			remoteInfo = EmoRestaurant;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		902830721AA6FAD2004F2B0C /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		902830731AA6FAD2004F2B0C /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
+		902830741AA6FAD2004F2B0C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		902830751AA6FAD2004F2B0C /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		902830761AA6FAD2004F2B0C /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		902830771AA6FAD2004F2B0C /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		902830781AA6FAD2004F2B0C /* DisplayResturantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayResturantViewController.swift; sourceTree = "<group>"; };
+		902830791AA6FAD2004F2B0C /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		90ABA10F1AA8273F00B4D711 /* ShaoShanChong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ShaoShanChong.jpg; sourceTree = "<group>"; };
+		90ABA1111AA828AE00B4D711 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
+		B73479DC1AA83C1D000E9638 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B73479DE1AA83C24000E9638 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		B7C007E11AA6D1D900A96DFB /* EmoRestaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoRestaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C007E51AA6D1D900A96DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C007E61AA6D1D900A96DFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7C007EB1AA6D1D900A96DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7C007ED1AA6D1D900A96DFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B7C007F01AA6D1D900A96DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B7C007F61AA6D1D900A96DFB /* EmoRestaurantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmoRestaurantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C007FB1AA6D1D900A96DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C007FC1AA6D1D900A96DFB /* EmoRestaurantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoRestaurantTests.swift; sourceTree = "<group>"; };
+		B7C008061AA6D1EE00A96DFB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B7C008081AA6D1F400A96DFB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B7C0080A1AA6D1FA00A96DFB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B7C0080C1AA6D20000A96DFB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B7C0080E1AA6D20500A96DFB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B7C008101AA6D20A00A96DFB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B7C008121AA6D20F00A96DFB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B7C008141AA6D21400A96DFB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B7C008161AA6D21C00A96DFB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B7C008181AA6D22300A96DFB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B7C0081A1AA6D22A00A96DFB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B7C0081C1AA6D24C00A96DFB /* EmoRestaurant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmoRestaurant-Bridging-Header.h"; sourceTree = "<group>"; };
+		B7C0081F1AA6D27900A96DFB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B7C008301AA6D85000A96DFB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7C007DE1AA6D1D900A96DFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C0081B1AA6D22A00A96DFB /* libsqlite3.dylib in Frameworks */,
+				B7C008191AA6D22300A96DFB /* libz.dylib in Frameworks */,
+				B7C008171AA6D21C00A96DFB /* SystemConfiguration.framework in Frameworks */,
+				B7C008151AA6D21400A96DFB /* StoreKit.framework in Frameworks */,
+				B7C008131AA6D20F00A96DFB /* Security.framework in Frameworks */,
+				B7C008111AA6D20A00A96DFB /* QuartzCore.framework in Frameworks */,
+				B7C0080F1AA6D20500A96DFB /* MobileCoreServices.framework in Frameworks */,
+				B7C0080D1AA6D20000A96DFB /* CoreLocation.framework in Frameworks */,
+				B7C0080B1AA6D1FA00A96DFB /* CoreGraphics.framework in Frameworks */,
+				B7C008091AA6D1F400A96DFB /* CFNetwork.framework in Frameworks */,
+				B7C008201AA6D27900A96DFB /* Parse.framework in Frameworks */,
+				B7C008071AA6D1EE00A96DFB /* AudioToolbox.framework in Frameworks */,
+				B7C008311AA6D85000A96DFB /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C007F31AA6D1D900A96DFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7C007D81AA6D1D900A96DFB = {
+			isa = PBXGroup;
+			children = (
+				B7C007E31AA6D1D900A96DFB /* EmoRestaurant */,
+				B7C007F91AA6D1D900A96DFB /* EmoRestaurantTests */,
+				B7C007E21AA6D1D900A96DFB /* Products */,
+				B7C008291AA6D81300A96DFB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7C007E21AA6D1D900A96DFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7C007E11AA6D1D900A96DFB /* EmoRestaurant.app */,
+				B7C007F61AA6D1D900A96DFB /* EmoRestaurantTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7C007E31AA6D1D900A96DFB /* EmoRestaurant */ = {
+			isa = PBXGroup;
+			children = (
+				902830751AA6FAD2004F2B0C /* RegistrationViewController.swift */,
+				902830741AA6FAD2004F2B0C /* LoginViewController.swift */,
+				902830721AA6FAD2004F2B0C /* ImageViewController.swift */,
+				902830731AA6FAD2004F2B0C /* SearchResultTableViewController.swift */,
+				902830761AA6FAD2004F2B0C /* SearchViewController.swift */,
+				B73479DC1AA83C1D000E9638 /* WelcomeViewController.swift */,
+				B73479DE1AA83C24000E9638 /* AccountViewController.swift */,
+				902830771AA6FAD2004F2B0C /* HistoryViewController.swift */,
+				902830781AA6FAD2004F2B0C /* DisplayResturantViewController.swift */,
+				902830791AA6FAD2004F2B0C /* ScrollView.swift */,
+				B7C007E61AA6D1D900A96DFB /* AppDelegate.swift */,
+				90ABA1111AA828AE00B4D711 /* DemoURL.swift */,
+				B7C007EA1AA6D1D900A96DFB /* Main.storyboard */,
+				B7C0081C1AA6D24C00A96DFB /* EmoRestaurant-Bridging-Header.h */,
+				B7C007E41AA6D1D900A96DFB /* Supporting Files */,
+			);
+			path = EmoRestaurant;
+			sourceTree = "<group>";
+		};
+		B7C007E41AA6D1D900A96DFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7C007ED1AA6D1D900A96DFB /* Images.xcassets */,
+				B7C007EF1AA6D1D900A96DFB /* LaunchScreen.xib */,
+				90ABA10F1AA8273F00B4D711 /* ShaoShanChong.jpg */,
+				B7C007E51AA6D1D900A96DFB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7C007F91AA6D1D900A96DFB /* EmoRestaurantTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7C007FC1AA6D1D900A96DFB /* EmoRestaurantTests.swift */,
+				B7C007FA1AA6D1D900A96DFB /* Supporting Files */,
+			);
+			path = EmoRestaurantTests;
+			sourceTree = "<group>";
+		};
+		B7C007FA1AA6D1D900A96DFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7C007FB1AA6D1D900A96DFB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7C008291AA6D81300A96DFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7C008301AA6D85000A96DFB /* Bolts.framework */,
+				B7C0081F1AA6D27900A96DFB /* Parse.framework */,
+				B7C0081A1AA6D22A00A96DFB /* libsqlite3.dylib */,
+				B7C008181AA6D22300A96DFB /* libz.dylib */,
+				B7C008161AA6D21C00A96DFB /* SystemConfiguration.framework */,
+				B7C008141AA6D21400A96DFB /* StoreKit.framework */,
+				B7C008121AA6D20F00A96DFB /* Security.framework */,
+				B7C008101AA6D20A00A96DFB /* QuartzCore.framework */,
+				B7C0080E1AA6D20500A96DFB /* MobileCoreServices.framework */,
+				B7C0080C1AA6D20000A96DFB /* CoreLocation.framework */,
+				B7C0080A1AA6D1FA00A96DFB /* CoreGraphics.framework */,
+				B7C008081AA6D1F400A96DFB /* CFNetwork.framework */,
+				B7C008061AA6D1EE00A96DFB /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7C007E01AA6D1D900A96DFB /* EmoRestaurant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7C008001AA6D1D900A96DFB /* Build configuration list for PBXNativeTarget "EmoRestaurant" */;
+			buildPhases = (
+				B7C007DD1AA6D1D900A96DFB /* Sources */,
+				B7C007DE1AA6D1D900A96DFB /* Frameworks */,
+				B7C007DF1AA6D1D900A96DFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmoRestaurant;
+			productName = EmoRestaurant;
+			productReference = B7C007E11AA6D1D900A96DFB /* EmoRestaurant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7C007F51AA6D1D900A96DFB /* EmoRestaurantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7C008031AA6D1D900A96DFB /* Build configuration list for PBXNativeTarget "EmoRestaurantTests" */;
+			buildPhases = (
+				B7C007F21AA6D1D900A96DFB /* Sources */,
+				B7C007F31AA6D1D900A96DFB /* Frameworks */,
+				B7C007F41AA6D1D900A96DFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7C007F81AA6D1D900A96DFB /* PBXTargetDependency */,
+			);
+			name = EmoRestaurantTests;
+			productName = EmoRestaurantTests;
+			productReference = B7C007F61AA6D1D900A96DFB /* EmoRestaurantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7C007D91AA6D1D900A96DFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Stanford University";
+				TargetAttributes = {
+					B7C007E01AA6D1D900A96DFB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B7C007F51AA6D1D900A96DFB = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B7C007E01AA6D1D900A96DFB;
+					};
+				};
+			};
+			buildConfigurationList = B7C007DC1AA6D1D900A96DFB /* Build configuration list for PBXProject "EmoRestaurant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7C007D81AA6D1D900A96DFB;
+			productRefGroup = B7C007E21AA6D1D900A96DFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7C007E01AA6D1D900A96DFB /* EmoRestaurant */,
+				B7C007F51AA6D1D900A96DFB /* EmoRestaurantTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7C007DF1AA6D1D900A96DFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ABA1101AA8273F00B4D711 /* ShaoShanChong.jpg in Resources */,
+				B7C007EC1AA6D1D900A96DFB /* Main.storyboard in Resources */,
+				B7C007F11AA6D1D900A96DFB /* LaunchScreen.xib in Resources */,
+				B7C007EE1AA6D1D900A96DFB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C007F41AA6D1D900A96DFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7C007DD1AA6D1D900A96DFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9028307D1AA6FAD2004F2B0C /* RegistrationViewController.swift in Sources */,
+				9028307E1AA6FAD2004F2B0C /* SearchViewController.swift in Sources */,
+				B73479DF1AA83C24000E9638 /* AccountViewController.swift in Sources */,
+				B73479DD1AA83C1D000E9638 /* WelcomeViewController.swift in Sources */,
+				9028307B1AA6FAD2004F2B0C /* SearchResultTableViewController.swift in Sources */,
+				902830811AA6FAD2004F2B0C /* ScrollView.swift in Sources */,
+				9028307A1AA6FAD2004F2B0C /* ImageViewController.swift in Sources */,
+				9028307C1AA6FAD2004F2B0C /* LoginViewController.swift in Sources */,
+				90ABA1121AA828AE00B4D711 /* DemoURL.swift in Sources */,
+				902830801AA6FAD2004F2B0C /* DisplayResturantViewController.swift in Sources */,
+				B7C007E71AA6D1D900A96DFB /* AppDelegate.swift in Sources */,
+				9028307F1AA6FAD2004F2B0C /* HistoryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C007F21AA6D1D900A96DFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C007FD1AA6D1D900A96DFB /* EmoRestaurantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7C007F81AA6D1D900A96DFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7C007E01AA6D1D900A96DFB /* EmoRestaurant */;
+			targetProxy = B7C007F71AA6D1D900A96DFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7C007EA1AA6D1D900A96DFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7C007EB1AA6D1D900A96DFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7C007EF1AA6D1D900A96DFB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7C007F01AA6D1D900A96DFB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7C007FE1AA6D1D900A96DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7C007FF1AA6D1D900A96DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7C008011AA6D1D900A96DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = EmoRestaurant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EmoRestaurant/EmoRestaurant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7C008021AA6D1D900A96DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = EmoRestaurant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EmoRestaurant/EmoRestaurant-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B7C008041AA6D1D900A96DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EmoRestaurantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmoRestaurant.app/EmoRestaurant";
+			};
+			name = Debug;
+		};
+		B7C008051AA6D1D900A96DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EmoRestaurantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmoRestaurant.app/EmoRestaurant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7C007DC1AA6D1D900A96DFB /* Build configuration list for PBXProject "EmoRestaurant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C007FE1AA6D1D900A96DFB /* Debug */,
+				B7C007FF1AA6D1D900A96DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7C008001AA6D1D900A96DFB /* Build configuration list for PBXNativeTarget "EmoRestaurant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C008011AA6D1D900A96DFB /* Debug */,
+				B7C008021AA6D1D900A96DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7C008031AA6D1D900A96DFB /* Build configuration list for PBXNativeTarget "EmoRestaurantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C008041AA6D1D900A96DFB /* Debug */,
+				B7C008051AA6D1D900A96DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7C007D91AA6D1D900A96DFB /* Project object */;
+}
