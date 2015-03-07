@@ -41,6 +41,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginButton.layer.borderWidth = 1.0
         loginButton.layer.borderColor = UIColor.blueColor().CGColor
         navigationController?.navigationBarHidden = false
+        
+        // test only
+        usernameTextField.text = "1"
+        passwordTextField.text = "1"
+        login()
     }
     
     @IBAction func login() {

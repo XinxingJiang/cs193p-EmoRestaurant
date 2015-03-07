@@ -15,25 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // connect app to Parse
-        Parse.setApplicationId("zrLR5lJqr7MdryplpTQTF0KzqVVz4zEhxBIdWYYm", clientKey: "1nwUB5glhl1FntiqmRjZ92U0y70jjmiicTHUuTTn")
-        
-        var query =  PFQuery(className: "Restaurants")
-        query.whereKey("RestaurantName", equalTo: "ShaoShanChong")
-        query.findObjectsInBackgroundWithBlock { (ObjectArray, Error) in
-            
-             var picture = ObjectArray.first as PFObject
-            var imageURL = DemoURL.NASA.Earth
-            if let url =  imageURL{
-                let imageData = NSData(contentsOfURL: url)
-                let imageFile = PFFile(name:"Earth.jpg",data: imageData)
-                picture["ProfileImage"] = imageFile
-                picture.saveInBackgroundWithBlock { (success, error) in
-                    
-                }
-
-           }
-        }
-        
+        Parse.setApplicationId("zrLR5lJqr7MdryplpTQTF0KzqVVz4zEhxBIdWYYm", clientKey: "1nwUB5glhl1FntiqmRjZ92U0y70jjmiicTHUuTTn")        
         return true
     }
 

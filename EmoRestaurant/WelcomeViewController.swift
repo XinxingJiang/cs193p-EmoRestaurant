@@ -20,6 +20,5 @@ class WelcomeViewController: UIViewController {
         registerButton.layer.borderColor = UIColor.blueColor().CGColor
         loginButton.layer.borderWidth = 1.0
         loginButton.layer.borderColor = UIColor.blueColor().CGColor
-        var x = 1
     }
 }
