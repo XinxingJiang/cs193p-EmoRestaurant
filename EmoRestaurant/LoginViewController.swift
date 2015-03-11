@@ -10,6 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
+//    var autoLogin = true
+    
     @IBOutlet weak var usernameTextField: UITextField! {
         didSet {
             usernameTextField.delegate = self
@@ -41,6 +43,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginButton.layer.borderWidth = 1.0
         loginButton.layer.borderColor = UIColor.blueColor().CGColor
         navigationController?.navigationBarHidden = false
+        
+//        if autoLogin {
+//            usernameTextField.text = "123"
+//            passwordTextField.text = "123"
+//            login()
+//        }
     }
     
     @IBAction func login() {
