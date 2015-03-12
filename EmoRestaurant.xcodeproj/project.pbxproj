@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9028307A1AA6FAD2004F2B0C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830721AA6FAD2004F2B0C /* ImageViewController.swift */; };
+		9028307A1AA6FAD2004F2B0C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830721AA6FAD2004F2B0C /* MapViewController.swift */; };
 		9028307B1AA6FAD2004F2B0C /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830731AA6FAD2004F2B0C /* SearchResultTableViewController.swift */; };
 		9028307C1AA6FAD2004F2B0C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830741AA6FAD2004F2B0C /* LoginViewController.swift */; };
 		9028307D1AA6FAD2004F2B0C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830751AA6FAD2004F2B0C /* RegistrationViewController.swift */; };
 		9028307E1AA6FAD2004F2B0C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830761AA6FAD2004F2B0C /* SearchViewController.swift */; };
 		9028307F1AA6FAD2004F2B0C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830771AA6FAD2004F2B0C /* HistoryViewController.swift */; };
 		902830801AA6FAD2004F2B0C /* DisplayResturantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830781AA6FAD2004F2B0C /* DisplayResturantViewController.swift */; };
-		902830811AA6FAD2004F2B0C /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902830791AA6FAD2004F2B0C /* ScrollView.swift */; };
 		909B23E91AAFB8C000346B80 /* DisplayMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909B23E81AAFB8C000346B80 /* DisplayMainTableViewCell.swift */; };
 		909B23EB1AB01DA900346B80 /* DisplayCommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909B23EA1AB01DA900346B80 /* DisplayCommentsTableViewCell.swift */; };
 		909C75031AAA7DEE001C5195 /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909C75021AAA7DEE001C5195 /* HistoryCollectionViewCell.swift */; };
 		90ABA1101AA8273F00B4D711 /* ShaoShanChong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90ABA10F1AA8273F00B4D711 /* ShaoShanChong.jpg */; };
 		90ABA1121AA828AE00B4D711 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ABA1111AA828AE00B4D711 /* DemoURL.swift */; };
+		90DCDA811AB16E9A008AE2CD /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DCDA801AB16E9A008AE2CD /* CommentsViewController.swift */; };
 		B73479DD1AA83C1D000E9638 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73479DC1AA83C1D000E9638 /* WelcomeViewController.swift */; };
 		B73479DF1AA83C24000E9638 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73479DE1AA83C24000E9638 /* AccountViewController.swift */; };
 		B7C007E71AA6D1D900A96DFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C007E61AA6D1D900A96DFB /* AppDelegate.swift */; };
@@ -53,19 +53,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		902830721AA6FAD2004F2B0C /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		902830721AA6FAD2004F2B0C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		902830731AA6FAD2004F2B0C /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
 		902830741AA6FAD2004F2B0C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		902830751AA6FAD2004F2B0C /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		902830761AA6FAD2004F2B0C /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		902830771AA6FAD2004F2B0C /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		902830781AA6FAD2004F2B0C /* DisplayResturantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayResturantViewController.swift; sourceTree = "<group>"; };
-		902830791AA6FAD2004F2B0C /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		909B23E81AAFB8C000346B80 /* DisplayMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayMainTableViewCell.swift; sourceTree = "<group>"; };
 		909B23EA1AB01DA900346B80 /* DisplayCommentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCommentsTableViewCell.swift; sourceTree = "<group>"; };
 		909C75021AAA7DEE001C5195 /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		90ABA10F1AA8273F00B4D711 /* ShaoShanChong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ShaoShanChong.jpg; sourceTree = "<group>"; };
 		90ABA1111AA828AE00B4D711 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
+		90DCDA801AB16E9A008AE2CD /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		B73479DC1AA83C1D000E9638 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B73479DE1AA83C24000E9638 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		B7C007E11AA6D1D900A96DFB /* EmoRestaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoRestaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +124,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90DCDA821AB17449008AE2CD /* Yue's code */ = {
+			isa = PBXGroup;
+			children = (
+				B7C007EA1AA6D1D900A96DFB /* Main.storyboard */,
+				902830721AA6FAD2004F2B0C /* MapViewController.swift */,
+				902830771AA6FAD2004F2B0C /* HistoryViewController.swift */,
+				909C75021AAA7DEE001C5195 /* HistoryCollectionViewCell.swift */,
+				902830781AA6FAD2004F2B0C /* DisplayResturantViewController.swift */,
+				909B23E81AAFB8C000346B80 /* DisplayMainTableViewCell.swift */,
+				909B23EA1AB01DA900346B80 /* DisplayCommentsTableViewCell.swift */,
+				90DCDA801AB16E9A008AE2CD /* CommentsViewController.swift */,
+			);
+			name = "Yue's code";
+			sourceTree = "<group>";
+		};
 		B7C007D81AA6D1D900A96DFB = {
 			isa = PBXGroup;
 			children = (
@@ -146,22 +161,15 @@
 		B7C007E31AA6D1D900A96DFB /* EmoRestaurant */ = {
 			isa = PBXGroup;
 			children = (
-				909C75021AAA7DEE001C5195 /* HistoryCollectionViewCell.swift */,
+				90DCDA821AB17449008AE2CD /* Yue's code */,
 				902830751AA6FAD2004F2B0C /* RegistrationViewController.swift */,
 				902830741AA6FAD2004F2B0C /* LoginViewController.swift */,
-				902830721AA6FAD2004F2B0C /* ImageViewController.swift */,
 				902830731AA6FAD2004F2B0C /* SearchResultTableViewController.swift */,
 				902830761AA6FAD2004F2B0C /* SearchViewController.swift */,
 				B73479DC1AA83C1D000E9638 /* WelcomeViewController.swift */,
 				B73479DE1AA83C24000E9638 /* AccountViewController.swift */,
-				902830771AA6FAD2004F2B0C /* HistoryViewController.swift */,
-				902830781AA6FAD2004F2B0C /* DisplayResturantViewController.swift */,
-				909B23E81AAFB8C000346B80 /* DisplayMainTableViewCell.swift */,
-				909B23EA1AB01DA900346B80 /* DisplayCommentsTableViewCell.swift */,
-				902830791AA6FAD2004F2B0C /* ScrollView.swift */,
 				B7C007E61AA6D1D900A96DFB /* AppDelegate.swift */,
 				90ABA1111AA828AE00B4D711 /* DemoURL.swift */,
-				B7C007EA1AA6D1D900A96DFB /* Main.storyboard */,
 				B7C0081C1AA6D24C00A96DFB /* EmoRestaurant-Bridging-Header.h */,
 				B7C007E41AA6D1D900A96DFB /* Supporting Files */,
 			);
@@ -265,6 +273,7 @@
 				TargetAttributes = {
 					B7C007E01AA6D1D900A96DFB = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = FUTU96J3U9;
 					};
 					B7C007F51AA6D1D900A96DFB = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -323,9 +332,9 @@
 				B73479DF1AA83C24000E9638 /* AccountViewController.swift in Sources */,
 				B73479DD1AA83C1D000E9638 /* WelcomeViewController.swift in Sources */,
 				9028307B1AA6FAD2004F2B0C /* SearchResultTableViewController.swift in Sources */,
-				902830811AA6FAD2004F2B0C /* ScrollView.swift in Sources */,
-				9028307A1AA6FAD2004F2B0C /* ImageViewController.swift in Sources */,
+				9028307A1AA6FAD2004F2B0C /* MapViewController.swift in Sources */,
 				9028307C1AA6FAD2004F2B0C /* LoginViewController.swift in Sources */,
+				90DCDA811AB16E9A008AE2CD /* CommentsViewController.swift in Sources */,
 				909C75031AAA7DEE001C5195 /* HistoryCollectionViewCell.swift in Sources */,
 				90ABA1121AA828AE00B4D711 /* DemoURL.swift in Sources */,
 				902830801AA6FAD2004F2B0C /* DisplayResturantViewController.swift in Sources */,
@@ -457,6 +466,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -464,8 +475,10 @@
 				INFOPLIST_FILE = EmoRestaurant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "EmoRestaurant/EmoRestaurant-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,6 +487,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -481,7 +496,9 @@
 				INFOPLIST_FILE = EmoRestaurant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "EmoRestaurant/EmoRestaurant-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

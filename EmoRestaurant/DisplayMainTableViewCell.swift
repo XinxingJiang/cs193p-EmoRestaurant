@@ -37,12 +37,12 @@ class DisplayMainTableViewCell: UITableViewCell
             var imageFile = self.restaurantInfo!.objectForKey("ProfileImage") as PFFile
             let imageData = imageFile.getData()
             let nameLabelNew = self.restaurantInfo!.objectForKey("RestaurantName") as String
-            let restaurantAddress = self.restaurantInfo!.objectForKey("Address") as String
+//            let restaurantAddress = self.restaurantInfo!.objectForKey("Address") as String
             let restaurantPhone = self.restaurantInfo!.objectForKey("Phone") as String
             dispatch_async(dispatch_get_main_queue()) {
                 self.nameLabel.text = nameLabelNew
                 self.restaurantImage.image = UIImage(data: imageData!)
-                self.address.text = restaurantAddress
+                self.address.text = self.restaurantAddress
                 self.phone.text = restaurantPhone
             }
         }

@@ -13,6 +13,7 @@ class DisplayCommentsTableViewCell: UITableViewCell {
     
     var restaurantComments: String?
     
+    @IBOutlet weak var commentsLabel: UILabel!
 
 
 }

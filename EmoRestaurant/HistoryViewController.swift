@@ -13,9 +13,20 @@ class HistoryViewController: UICollectionViewController, UICollectionViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         getRestaurantData()
+//        var query =  PFQuery(className: "Restaurant")
+//        query.whereKey("RestaurantName", equalTo: "Starbucks @ Stanford")
+//        query.findObjectsInBackgroundWithBlock { (ObjectArray, Error) in
+//            
+//            var restarunt = ObjectArray.first as PFObject
+//            var list: [String] = ["Friendly staff, good service and right on campus.",
+//            "The ambience is still pretty Starbucks-y although it's positioned in an open layout.","Having dropped off a friend for his audition at the Stanford Jazz fest I realized it was too nice of a day to be indoors. I was also too lazy to go anywhere else. So I walked over from Dinkelspiel Auditorium and got myself an Iced Tea. Damn this place is inundated. There are only 3 folks working on a Sunday and they were crushed. Took a good 10 min to get my drink. They def need more staff! Took said tea and kicked it for an hour or so outside and enjoyed the nice sunny day.","Great convenient location, right in the midst of the Stanford campus. This Starbucks is a solid place for you to get your morning pick-me-up before heading to classes or work or afternoon treat. One thing to be wary of is the pre 9am rush, when EVERYONE on campus seems to be here. It can be around 10 min before you receive your order. After that rush though, the service is very quick. Lots of tables, chairs, and couches as well for you to do work and sip on your beverage."]
+//            restarunt.setObject(list, forKey: "Comments")
+//            restarunt.saveInBackgroundWithBlock { (success, error) in
+//            }
+//        }
     }
     
-    //model: dataSource that is set by "getRestaurantData()"
+    // MARK: - model: dataSource that is set by "getRestaurantData()"
     var restaurantInfo :[PFObject] = []
     
     private struct Storyboard {
@@ -162,16 +173,7 @@ class HistoryViewController: UICollectionViewController, UICollectionViewDelegat
     }
 }
 
-//        var query =  PFQuery(className: "Restaurant")
-//        query.whereKey("RestaurantName", equalTo: "HongKongRestaurant @ Palo Alto")
-//        query.findObjectsInBackgroundWithBlock { (ObjectArray, Error) in
-//
-//            var restarunt = ObjectArray.first as PFObject
-//            var list: [String] = ["cat","dog","hippo"]
-//            restarunt.setObject(list, forKey: "Comments")
-//            restarunt.saveInBackgroundWithBlock { (success, error) in
-//            }
-//        }
+
 
 
 //
