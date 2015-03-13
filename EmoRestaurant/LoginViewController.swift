@@ -10,12 +10,13 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
+    var autoLogin = true
+    
     @IBOutlet weak var usernameTextField: UITextField! {
         didSet {
             usernameTextField.delegate = self
         }
     }
-    
     @IBOutlet weak var passwordTextField: UITextField! {
         didSet {
             passwordTextField.delegate = self
@@ -26,6 +27,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     var username: String?
     
     @IBOutlet weak var loginButton: UIButton!
+    
+    // MARK: View Controller Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,15 +41,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         // make login button unclickable
         loginButton.enabled = false
-        loginButton.layer.borderWidth = 1.0
-        loginButton.layer.borderColor = UIColor.blueColor().CGColor
-        navigationController?.navigationBarHidden = false
+        loginButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
+        navigationController?.navigationBarHidden = true
         
         // test only
-        usernameTextField.text = "1"
-        passwordTextField.text = "1"
-        login()
+        if autoLogin {
+            usernameTextField.text = "123"
+            passwordTextField.text = "123"
+            login()
+        }
     }
+    
+    // MARL: - Login
     
     @IBAction func login() {
         let username = usernameTextField.text
@@ -55,17 +61,30 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if error == nil {
                 self.performSegueWithIdentifier(Constants.SegueIdentifier, sender: nil)
             } else {
-                var alert = UIAlertController(title: "Error!", message: Constants.LoginAlertMessage, preferredStyle: UIAlertControllerStyle.Alert)
+                println(error.code)
+                var errorMessage: String
+                switch error.code {
+                case Error.NetworkErrorCode:
+                    errorMessage = Error.NetworkErrorMessage
+                case Error.InvalidLoginParameterErrorCode:
+                    errorMessage = Error.InvalidLoginParameterErrorMessage
+                default:
+                    errorMessage = Error.UnknownErrorMessage
+                }
+                var alert = UIAlertController(title: "Error!", message: errorMessage, preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Back", style: .Cancel, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
         }
     }
     
+    // MARK: - Constants
+    
     private struct Constants {
         static let SegueIdentifier = "Login Finish"
-        static let LoginAlertMessage = "invalid username or password"
     }
+    
+    // MARK: - Text Field Delegate
     
     // when click return at username textfield, move cursor to password textfield; when click return at password field, hide keyboard
     func textFieldShouldReturn(textField: UITextField) -> Bool {

@@ -12,13 +12,18 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
+    
+    // MARK: View Controller Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // hide the navigation bar
         navigationController?.navigationBarHidden = true
-        registerButton.layer.borderWidth = 1.0
-        registerButton.layer.borderColor = UIColor.blueColor().CGColor
-        loginButton.layer.borderWidth = 1.0
-        loginButton.layer.borderColor = UIColor.blueColor().CGColor
+        registerButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
+        loginButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
+    }
+    
+    @IBAction func goBackToWelcome(segue: UIStoryboardSegue) {
+        
     }
 }

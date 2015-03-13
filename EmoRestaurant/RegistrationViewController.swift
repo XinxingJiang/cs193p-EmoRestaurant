@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MobileCoreServices
 
-class RegistrationViewController: UIViewController, UITextFieldDelegate {
+class RegistrationViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var usernameTextField: UITextField! {
         didSet {
@@ -20,55 +21,118 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
             passwordTextField.delegate = self
         }
     }
+    
+    @IBOutlet weak var uploadProfileImageButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
+    // MARK: View Controller Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // move cursor to username field automatically
         usernameTextField.becomeFirstResponder()
         // make register button unclickable
+        uploadProfileImageButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
+        registerButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
         registerButton.enabled = false
-        registerButton.layer.borderWidth = 1.0
-        registerButton.layer.borderColor = UIColor.blueColor().CGColor
         navigationController?.navigationBarHidden = false
     }
+    
+    // MARK: - Profile Image
+    
+    // model for profile image
+    var profileImage: UIImage?
 
+    @IBAction func uploadProfileImage() {
+        var alert = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        alert.addAction(UIAlertAction(title: "Take a photo", style: UIAlertActionStyle.Default) { (action) in
+            self.takePhoto()
+            })
+        alert.addAction(UIAlertAction(title: "Choose an existing photo", style: UIAlertActionStyle.Default) { (action) in
+            self.choosePhoto()
+            })
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+        
+    // MARK: - Image Picker Delegate
+    
+    // get called when user take a photo or choose a photo
+    // save the image to model
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        var image = info[UIImagePickerControllerEditedImage] as? UIImage
+        if image == nil {
+            image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        }
+        profileImage = image!
+        if picker.sourceType == UIImagePickerControllerSourceType.Camera {
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        }
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    // MARK: - Register
+    
     @IBAction func register() {
+        spinner.startAnimating()
         let username = usernameTextField.text
         let password = passwordTextField.text
         let user = PFUser()
         user.username = username
         user.password = password
-        user.signUpInBackgroundWithBlock { (success, error) in
+        if profileImage != nil {
+            user.setProfileImage(profileImage!)
+        }
+        user.signUpInBackgroundWithBlock { (_, error) in
             // for security reason, the user needs to input password in login page again
             // for convience, username will be filled
-            if success {
+            if error == nil {
                 self.performSegueWithIdentifier(Constants.SegueIdentifier, sender: self.registerButton)
             } else {
-                var alert = UIAlertController(title: "Error!", message: Constants.RegisterAlertMessage, preferredStyle: UIAlertControllerStyle.Alert)
+                var errorMessage: String
+                switch error.code {
+                case Error.NetworkErrorCode:
+                    errorMessage = Error.NetworkErrorMessage
+                case Error.UsernameExistErrorCode:
+                    errorMessage = Error.UsernameExistErrorMessage
+                default:
+                    errorMessage = Error.UnknownErrorMessage
+                }
+                
+                var alert = UIAlertController(title: "Error!", message: errorMessage, preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Back", style: .Cancel, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
+            self.spinner.stopAnimating()
         }
-    }    
+    }
+    
+    // MARK: Navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier {
             switch identifier {
             case Constants.SegueIdentifier:
-                if let navCon = segue.destinationViewController as? UINavigationController {
-                    if let lvc = navCon.visibleViewController as? LoginViewController {
-                        lvc.username = usernameTextField.text
-                    }
+                if let lvc = segue.destinationViewController as? LoginViewController {
+                    lvc.username = usernameTextField.text
                 }
             default: break
             }
         }
     }
     
+    // MARK: - Constants
+    
     private struct Constants {
         static let SegueIdentifier = "Register Finish"
-        static let RegisterAlertMessage = "username already taken"
     }
+    
+    // MARK: Text Field Delegate
     
     // when click return at username textfield, move cursor to password textfield; when click return at password field, hide keyboard
     func textFieldShouldReturn(textField: UITextField) -> Bool {
