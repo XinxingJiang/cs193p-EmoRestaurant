@@ -17,10 +17,26 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // hide the navigation bar
+        registerButton.setStyle(borderWidth: 1.0, borderColor: UIColor.grayColor().CGColor, backgroundColor: UIColor.grayColor(), tintColor: UIColor.whiteColor())
+        loginButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor, backgroundColor: UIColor.blueColor(), tintColor: UIColor.whiteColor())
+        
+//        let backgroundImage = UIImage(named: "background_stanford")!
+//        let backgroundImageView = UIImageView(image: backgroundImage)
+//        backgroundImageView.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        view.addSubview(backgroundImageView)
+//        view.addConstraint(backgroundImageView.auto)
+//        self.
+//        
+//            UIImageView* imgView = UIImageView(image: myUIImage)
+//        imgView.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        self.view.addSubview(imgView)
+//        self.view.addConstraints(imgView.autoPinEdgesToSuperviewEdgesWithInsets(UIEdgeInsetsMake(0,0,0,0))
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController?.navigationBarHidden = true
-        registerButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
-        loginButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
     }
     
     @IBAction func goBackToWelcome(segue: UIStoryboardSegue) {

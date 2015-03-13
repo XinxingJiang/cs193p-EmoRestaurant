@@ -23,9 +23,9 @@ class AccountViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBarHidden = true
         usernameLabel.text = PFUser.currentUser().username
-        editButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
-        changePasswordButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
-        logoutButton.setStyle(borderWidth: 1.0, borderColor: UIColor.redColor().CGColor)
+//        editButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
+//        changePasswordButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
+//        logoutButton.setStyle(borderWidth: 1.0, borderColor: UIColor.redColor().CGColor)
         updateProdileImage()
     }
     

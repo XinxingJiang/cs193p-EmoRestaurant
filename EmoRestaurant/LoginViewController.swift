@@ -10,7 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    var autoLogin = true
+    var autoLogin = false
     
     @IBOutlet weak var usernameTextField: UITextField! {
         didSet {
@@ -41,8 +41,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         // make login button unclickable
         loginButton.enabled = false
-        loginButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
-        navigationController?.navigationBarHidden = true
+//        loginButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
         
         // test only
         if autoLogin {
@@ -50,6 +49,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             passwordTextField.text = "123"
             login()
         }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBarHidden = false
     }
     
     // MARL: - Login

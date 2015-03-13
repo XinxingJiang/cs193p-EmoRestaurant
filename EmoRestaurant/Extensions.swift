@@ -75,9 +75,11 @@ extension UITextView {
 }
 
 extension UIButton {
-    func setStyle(#borderWidth: CGFloat, borderColor: CGColor) {
+    func setStyle(#borderWidth: CGFloat, borderColor: CGColor, backgroundColor: UIColor, tintColor: UIColor) {
         self.layer.borderWidth = borderWidth
         self.layer.borderColor = borderColor
+        self.backgroundColor = backgroundColor
+        self.tintColor = tintColor
     }
 }
 

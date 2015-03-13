@@ -31,7 +31,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
         setupHappinessStepper()
         setupWeatherStepper()
         setupPeopleStepper()
-        pickOneButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
+//        pickOneButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
     }
     
     override func viewWillAppear(animated: Bool) {

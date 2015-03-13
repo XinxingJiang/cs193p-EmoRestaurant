@@ -89,7 +89,7 @@ class RestaurantViewController: UIViewController {
     // otherwise, add it to favorite
     @IBAction func flipFavorite() {
         if isFavorite != nil {
-            if isFavorite! { // remove from favorite
+            if isFavorite! { // remove favorite
                 var query = PFQuery(className: Database.UserAndRestaurant)
                 query.whereKey(Database.Username, equalTo: PFUser.currentUser().username)
                 query.whereKey(Database.Restaurant, equalTo: nameLabel.text)
@@ -175,6 +175,6 @@ class RestaurantViewController: UIViewController {
     
     private struct Constants {
         static let AddToFavorite = "Add to Favorites"
-        static let RemoveFromFavorites = "Remove from Favorites"
+        static let RemoveFromFavorites = "Remove Favorites"
     }
 }

@@ -33,9 +33,15 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate, UIImage
         // move cursor to username field automatically
         usernameTextField.becomeFirstResponder()
         // make register button unclickable
-        uploadProfileImageButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
-        registerButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
+//        uploadProfileImageButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
+//        registerButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
+        registerButton.backgroundColor = UIColor.grayColor()
         registerButton.enabled = false
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "background_space.jpg")!)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController?.navigationBarHidden = false
     }
     

@@ -33,7 +33,7 @@ class WriteCommentViewController: UIViewController, UITextViewDelegate {
         setupHappinessStepper()
         setupWeatherStepper()
         setupPeopleStepper()
-        submitButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
+//        submitButton.setStyle(borderWidth: 1.0, borderColor: UIColor.blueColor().CGColor)
     }
 
     override func viewWillAppear(animated: Bool) {
